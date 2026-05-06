@@ -32,7 +32,7 @@ class Observations(Base):
     __tablename__ = "observation"
     
     # PK
-    gbifID = Mapped[str] = mapped_column(primary_key=True)
+    gbifID: Mapped[str] = mapped_column(primary_key=True)
     
     # FK
     species_id: Mapped[int] = mapped_column(ForeignKey("species.speciesKey"))
