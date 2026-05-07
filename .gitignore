@@ -15,3 +15,4 @@ bioscatterVenv
 
 # Infrastructure 
 *.env
+*.log
